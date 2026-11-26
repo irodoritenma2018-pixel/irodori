@@ -13,7 +13,7 @@
 - DM連携: 自分でMetaアプリを作って公式APIでつなぐ（方法2）。流れは「Claudeが読む→返信案→あたるさんOK→送信」
 - 希望: 新メニューや月初の挨拶をフォロワーに届けたい（DM一斉送信はInstagramの規約で不可のため、代わりの方法を検討中）
 - LINE公式アカウント: 持っていない（あとで検討）
-- 予約投稿: Metricoolを連携して、Claudeが予約投稿まで行う（2026-11-26に着手）
+- 予約投稿: Metricool連携済み（2026-11-26）。ブランド「yakitori_birdiehouse」、Instagram＋TikTok（TikTokのユーザー名は旧店名 yakitoriharadaayata のまま）。タイムゾーン Asia/Tokyo
 
 ## 日程
 - 関係者プレオープン: 12/2(水)
