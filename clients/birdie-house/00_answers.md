@@ -13,6 +13,8 @@
 - DM連携: 自分でMetaアプリを作って公式APIでつなぐ（方法2）。流れは「Claudeが読む→返信案→あたるさんOK→送信」
 - 希望: 新メニューや月初の挨拶をフォロワーに届けたい（DM一斉送信はInstagramの規約で不可のため、代わりの方法を検討中）
 - LINE公式アカウント: 持っていない（あとで検討）
+- Instagram（2026-11-26更新）: 名前「焼鳥 BIRDIE HOUSE｜天神橋筋六丁目」、プロフィール写真はロゴ全体
+- TikTok（2026-11-26時点）: @yakitoribirdiehouse（認証済みビジネス）、名前「焼鳥 BIRDIE HOUSE｜天六」、フォロワー207、投稿3本（再生 111／2,005／2,601）。リンクに TableCheck（URLが shops/harada… ＝旧店のページの可能性。要確認）
 - 予約投稿: Metricool連携済み（2026-11-26）。ブランド「yakitori_birdiehouse」、Instagram＋TikTok（TikTokのユーザー名は旧店名 yakitoriharadaayata のまま）。タイムゾーン Asia/Tokyo
 
 ## 日程
