@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>BIRDIE HOUSE 運用計画</title>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;700;900&display=swap" rel="stylesheet">
+<style>
+/* VOICE: 店主に渡す運用計画書。結論先、落ち着いた文。
+   IDEA: 焼鳥屋の品書き札。赤い日の丸ロゴを継ぐ。
+   PICTURE: 12/1を中心にした3フェーズの帯（タイムライン）。
+   COLOUR and TYPE: 白地・墨・朱 #d22b2b。Zen Kaku Gothic New。
+   LAYOUT: 1カラム、スマホ前提、上部にセクションリンク。 */
+:root{color-scheme:light dark;--bg:light-dark(#ffffff,#141312);--ink:light-dark(#1b1a19,#efece7);--sub:light-dark(#5d5a56,#a9a49d);--line:light-dark(#e4e1dc,#2f2d2a);--red:#d22b2b;--panel:light-dark(#f6f4f1,#1d1c1a)}
+:root[data-theme=light]{color-scheme:light}:root[data-theme=dark]{color-scheme:dark}
+*{box-sizing:border-box;min-width:0}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.75 "Zen Kaku Gothic New","Hiragino Sans",sans-serif;overflow-x:clip}
+.band{padding:clamp(24px,4vw,56px) max(5vw,16px);max-width:820px;margin:0 auto}
+html{scroll-padding-top:64px}
+header{background:#1b1a19;color:#fff}
+header .band{padding-bottom:28px}
+.sun{width:64px;height:64px;border-radius:50%;background:var(--red);margin-bottom:16px}
+h1{font-size:clamp(30px,7vw,46px);line-height:1.1;margin:0 0 10px;font-weight:900;text-wrap:balance}
+header p{margin:0;color:#cfcac3}
+nav{display:flex;gap:8px;overflow-x:auto;padding:10px max(5vw,16px);border-bottom:1px solid var(--line);background:var(--bg);position:sticky;top:0;z-index:5}
+nav a{flex:none;padding:10px 14px;border-radius:999px;background:var(--panel);color:var(--ink);text-decoration:none;font-size:14px;font-weight:700}
+h2{font-size:26px;line-height:1.25;margin:8px 0 14px;font-weight:900}
+h3{font-size:18px;margin:24px 0 8px}
+.lead{font-size:17px}
+.kpi{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:16px 0}
+.kpi div{background:var(--panel);border-radius:12px;padding:14px}
+.kpi b{display:block;font-size:26px;line-height:1.2}
+.kpi span{font-size:13px;color:var(--sub)}
+ol.pri{padding-left:1.3em}ol.pri li{margin-bottom:10px}
+.phase{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px;margin:18px 0}
+.phase div{padding:12px 10px;border-radius:10px;background:var(--panel);font-size:13px;line-height:1.4}
+.phase div b{display:block;font-size:15px}
+.phase .on{background:var(--red);color:#fff}
+table{width:100%;border-collapse:collapse;font-size:15px;margin:8px 0 18px}
+th,td{text-align:left;padding:9px 6px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-size:13px;color:var(--sub);font-weight:700}
+td.d{white-space:nowrap;font-weight:700;width:5.5em}
+.tag{display:inline-block;font-size:12px;font-weight:700;padding:1px 7px;border-radius:5px;background:var(--ink);color:var(--bg);margin-right:4px}
+.copy{position:relative;background:var(--panel);border-radius:12px;padding:14px 14px 12px;margin:10px 0 20px}
+.copy pre{margin:0;white-space:pre-wrap;font:15px/1.7 inherit;font-family:inherit}
+.copy button{float:right;margin:0 0 6px 8px;min-height:40px;padding:0 14px;border-radius:8px;border:1px solid var(--line);background:var(--bg);color:var(--ink);font:700 14px inherit;font-family:inherit}
+.copy button:focus-visible,nav a:focus-visible{outline:3px solid var(--red);outline-offset:2px}
+ul.chk{list-style:none;padding:0}ul.chk li{padding:8px 0 8px 30px;border-bottom:1px solid var(--line);position:relative}
+ul.chk li::before{content:"";position:absolute;left:0;top:12px;width:18px;height:18px;border:2px solid var(--sub);border-radius:4px}
+.star{color:var(--red);font-weight:900}
+.note{font-size:14px;color:var(--sub)}
+.bar{height:10px;border-radius:5px;background:var(--red)}
+.mix td:last-child{width:40%}
+@media(max-width:600px){.phase{grid-template-columns:1fr}table{font-size:14px}}
+</style></head><body>
+<header><div class="band">
+<div class="sun" aria-hidden="true"></div>
+<h1>BIRDIE HOUSE<br>Instagram運用計画</h1>
+<p>@yakitori_birdiehouse ／ 作成 2026年11月26日 ／ ドラフト（店舗確認前）</p>
+</div></header>
+<nav aria-label="目次"><a href="#sum">結論</a><a href="#hear">ヒアリング</a><a href="#audit">現状</a><a href="#plan">方針</a><a href="#prof">プロフィール</a><a href="#cal">カレンダー</a><a href="#cap">キャプション</a><a href="#shoot">撮影</a><a href="#kpi">数値</a></nav>
+
+<section class="band" id="sum">
+<h2>12/1の切り替えで、今のフォロワーを新店の客に変える</h2>
+<p class="lead">フォロワー約1万・月31万閲覧の土台はある。足りないのは「新店の情報」と「予約の導線」。オープンまで5日なので、まずヒアリングと撮影、12/1にプロフィール一斉更新。</p>
+<div class="phase">
+<div><b>11/26〜30</b>切り替え<br>食べ納め＋予告</div>
+<div class="on"><b>12/1〜7</b>オープン<br>告知・看板メニュー</div>
+<div><b>12/8〜31</b>定着<br>忘年会・クリスマス</div>
+</div>
+<h3>次にやること</h3>
+<ol class="pri">
+<li><b>今日〜明日</b>：店舗ヒアリング（★の項目だけでも先に）</li>
+<li><b>オープン前</b>：撮影リストの素材を撮る</li>
+<li><b>12/1</b>：名前・自己紹介・ハイライト・ボタンを一斉更新、オープン告知を固定</li>
+</ol>
+</section>
+
+<section class="band" id="hear">
+<h2>ヒアリング項目</h2>
+<p class="note"><span class="star">★</span> は11/27中に確認したい項目</p>
+<h3>店舗基本情報</h3>
+<ul class="chk">
+<li><span class="star">★</span> オープン日（12/1確定か）、プレオープンの有無</li>
+<li><span class="star">★</span> 営業時間・定休日、年末年始の営業日</li>
+<li><span class="star">★</span> 予約方法（電話／DM／予約サイトURL）</li>
+<li><span class="star">★</span> 新店主の名前・顔出し可否・経歴</li>
+<li>席数（カウンター／テーブル）、貸切可否、人数上限</li>
+<li>最寄駅と徒歩分数</li>
+<li>喫煙／禁煙、支払い方法</li>
+</ul>
+<h3>業態・メニュー</h3>
+<ul class="chk">
+<li><span class="star">★</span> 新業態のコンセプトを一言で</li>
+<li><span class="star">★</span> 価格帯（客単価）、コースの有無</li>
+<li>看板メニュー3品（写真映え・話題性）</li>
+<li>ドリンクの特徴（日本酒・ワイン・カクテル等）</li>
+<li>「女性にも楽しんでもらえる」具体的な工夫</li>
+<li>旧店から引き継ぐもの／変わるもの</li>
+</ul>
+<h3>運用ルール</h3>
+<ul class="chk">
+<li>旧店主の最終挨拶・引き継ぎ投稿をしてよいか</li>
+<li>旧店の投稿は残すか、アーカイブするか</li>
+<li>ログイン情報の管理方法</li>
+<li>投稿前の確認フロー（誰が、何時間前までにOK）</li>
+<li>DM・コメント返信は代行か店舗か</li>
+<li>スタッフが日々ストーリーズ用に撮れるか</li>
+<li>NG事項（顔出しNGのスタッフ、価格表記など）</li>
+<li>ゴール（予約数／新規来店／客層／求人）</li>
+</ul>
+</section>
+
+<section class="band" id="audit">
+<h2>現状：届く力はある、新店の情報がない</h2>
+<div class="kpi">
+<div><b>9,722</b><span>フォロワー</span></div>
+<div><b>31.0万</b><span>過去30日の閲覧</span></div>
+<div><b>107</b><span>投稿</span></div>
+<div><b>1,049</b><span>フォロー中</span></div>
+</div>
+<h3>良い点</h3>
+<ul>
+<li>ゼロからではなく、既に届く土台がある</li>
+<li>ロゴ（鳳凰と赤丸）と「STAY PLAYFUL.」で世界観が固まっている</li>
+<li>ユーザー名は変更済み、カウントダウン投稿もしている</li>
+</ul>
+<h3>課題（優先順）</h3>
+<ol class="pri">
+<li><b>名前欄が旧店のまま。</b>名前は14日間に2回しか変えられないので、12/1に1回で決める。</li>
+<li><b>予約導線が弱い。</b>ボタンは「電話する」のみ。</li>
+<li><b>ハイライトが「経路」だけ。</b>メニュー・店内・予約・店主がない。</li>
+<li><b>フォロワーは旧店（コース・火入れ）のファン中心。</b>離脱を抑えつつ、20〜30代・女性・グループを取りにいく。</li>
+<li>フォロー中がやや多い。今後は同業・地域中心に少しずつ整理。</li>
+</ol>
+</section>
+
+<section class="band" id="plan">
+<h2>方針：遊び心のある焼鳥ダイニング</h2>
+<p><b>メイン客層</b>：20〜30代。梅田・中崎町・天六で飲む人。女性同士、カップル、少人数グループ。<br><b>サブ</b>：旧店のファン →「焼きの腕は健在」で引き留める。</p>
+<h3>投稿の柱</h3>
+<table class="mix"><thead><tr><th>柱</th><th>内容</th><th>比率</th></tr></thead><tbody>
+<tr><td>メニュー</td><td>焼き上がりの寄りリール、変わり串、ドリンク</td><td><div class="bar" style="width:100%"></div>40%</td></tr>
+<tr><td>人・店</td><td>新店主、仕込み、カウンターの空気</td><td><div class="bar" style="width:62%"></div>25%</td></tr>
+<tr><td>使い方</td><td>予約方法、空席、デート／女子会／忘年会</td><td><div class="bar" style="width:50%"></div>20%</td></tr>
+<tr><td>お客様</td><td>来店者ストーリーズのリポスト、口コミ</td><td><div class="bar" style="width:37%"></div>15%</td></tr>
+</tbody></table>
+<h3>頻度と時間</h3>
+<ul>
+<li>フィード・リール：週3〜4本（リール中心）</li>
+<li>ストーリーズ：毎営業日（空席・仕込み・今日のおすすめ）</li>
+<li>投稿時間：平日17〜18時、休日前は12時も。1か月後にインサイトで調整</li>
+</ul>
+<h3>ハッシュタグ（1投稿5〜8個）</h3>
+<p>#大阪焼鳥 #天六グルメ #中崎町グルメ #梅田グルメ #大阪グルメ #焼鳥 #焼き鳥 #焼鳥ダイニング #大阪デート #大阪女子会 #大阪忘年会 #birdiehouse #stayplayful</p>
+<h3>やらないこと</h3>
+<ul><li>他店・旧店主を下げる表現</li><li>未確定の価格・営業日を出すこと</li></ul>
+</section>
+
+<section class="band" id="prof">
+<h2>プロフィール案（12/1に変更）</h2>
+<h3>名前</h3>
+<div class="copy"><button type="button">コピー</button><pre>BIRDIE HOUSE｜大阪 焼鳥ダイニング</pre></div>
+<h3>自己紹介</h3>
+<div class="copy"><button type="button">コピー</button><pre>STAY PLAYFUL. 🐓
+遊び心のある焼鳥とお酒のダイニング
+━━━━━━━━━
+📍天六・中崎町（北区浮田1-1-15）
+🕔 営業時間／定休日
+🍢 アラカルト中心・お一人様〜グループ
+📩 ご予約はDM・電話・下記リンクから</pre></div>
+<p class="note">営業時間・最寄駅はヒアリング後に確定。最寄駅は住所からの推測。</p>
+<h3>ハイライト（新設）</h3>
+<p>予約 ／ MENU ／ 店内 ／ 店主 ／ お客様の声 ／ 経路</p>
+<h3>ボタン</h3>
+<p>「予約する」（予約サイトがあれば連携）＋「電話する」</p>
+</section>
+
+<section class="band" id="cal">
+<h2>投稿カレンダー</h2>
+<p class="note"><span class="tag">R</span>リール <span class="tag">F</span>フィード <span class="tag">S</span>ストーリーズ</p>
+<h3>切り替え（11/26〜30）</h3>
+<table><tbody id="c1"></tbody></table>
+<h3>オープン（12/1〜7）</h3>
+<table><tbody id="c2"></tbody></table>
+<h3>定着・忘年会（12/8〜31）</h3>
+<table><tbody id="c3"></tbody></table>
+</section>
+
+<section class="band" id="cap">
+<h2>キャプション案</h2>
+<p class="note">「〇〇」の部分はヒアリング後に差し替え</p>
+<h3>12/1 グランドオープン（固定投稿）</h3>
+<div class="copy"><button type="button">コピー</button><pre>本日、BIRDIE HOUSE グランドオープン。
+
+焼鳥は、もっと自由でいい。
+驚きと遊び心のあるアラカルトと、
+それに合うお酒をご用意してお待ちしています。
+
+お一人様も、女子会も、デートも。
+カウンターでも、グループでも。
+
+STAY PLAYFUL. 🐓
+
+━━━━━━━━━
+📍大阪市北区浮田1-1-15
+🕔 〇〇／定休日 〇〇
+📩 ご予約：DM・お電話・プロフィールのリンクから
+━━━━━━━━━
+
+#BIRDIEHOUSE #stayplayful #大阪焼鳥 #天六グルメ #中崎町グルメ #梅田グルメ #大阪デート #焼鳥ダイニング</pre></div>
+<h3>11/30 旧店主のご挨拶</h3>
+<div class="copy"><button type="button">コピー</button><pre>「焼鳥 原田采大」は本日で営業を終えます。
+
+これまで足を運んでくださった皆さま、
+本当にありがとうございました。
+
+明日12月1日からは、同じ場所で
+新しい店主による「BIRDIE HOUSE」が始まります。
+変わらず、この場所をよろしくお願いいたします。
+
+（旧店主からの一言）
+
+#焼鳥 #大阪焼鳥 #ありがとうございました</pre></div>
+<h3>12/2 看板メニュー（リール）</h3>
+<div class="copy"><button type="button">コピー</button><pre>まずはこれを食べてほしい。
+〇〇 — 〇〇
+
+焼き台の前で、一本ずつ。
+🔥 〇〇円
+
+保存して、次の飲み会の候補に👀
+
+#BIRDIEHOUSE #大阪焼鳥 #天六グルメ #焼き鳥 #大阪グルメ #stayplayful</pre></div>
+<h3>12/11 忘年会案内</h3>
+<div class="copy"><button type="button">コピー</button><pre>今年の忘年会、焼鳥でどうですか。
+
+🍢 〇名様まで対応
+🍺 〇〇
+📅 12月はご予約が埋まりやすいので、お早めに
+
+ご予約はDMまたはお電話で。
+
+#大阪忘年会 #梅田忘年会 #大阪焼鳥 #BIRDIEHOUSE #天六グルメ</pre></div>
+</section>
+
+<section class="band" id="shoot">
+<h2>撮影リスト（オープン前）</h2>
+<ul class="chk">
+<li>外観（昼・夜）、看板、入口</li>
+<li>店内全景、カウンター越しの焼き台</li>
+<li>看板メニュー3品の寄り（焼き上がり・湯気・タレ）</li>
+<li>ドリンク（乾杯シーン）</li>
+<li>新店主のポートレート、焼いている手元</li>
+<li>焼き音（10秒以上、ASMR用）</li>
+</ul>
+</section>
+
+<section class="band" id="kpi">
+<h2>数値の目標と記録</h2>
+<h3>12月末の目標</h3>
+<ul>
+<li>フォロワー 10,500（+約800）</li>
+<li>30日閲覧数 35万以上</li>
+<li>SNS経由の予約・来店数（店舗で「何を見て来たか」を記録してもらう）</li>
+</ul>
+<h3>毎週月曜に記録</h3>
+<p>フォロワー数、7日間の閲覧数、プロフィールアクセス、リンク・電話タップ、DM予約、反応が良かった投稿。</p>
+<p class="note">基準日 11/26：フォロワー 9,722 ／ 30日閲覧 31.0万</p>
+</section>
+
+<script>{
+const cal={
+c1:[["11/27 金","R","「残り3日」旧店の名物串を焼くシーン総集編"],["11/28 土","S","食べ納めの空席情報・来店者リポスト"],["11/29 日","F","新店主の紹介（顔写真・経歴・意気込み）※可否確認"],["11/30 月","F","旧店主から最後のご挨拶"],["11/30 月","S","「明日オープン」カウントダウン"]],
+c2:[["12/1 火","F","グランドオープン告知 → 固定投稿"],["12/1 火","—","プロフィール・名前・ハイライト・ボタン更新"],["12/2 水","R","看板メニューの焼き上がり寄り（15秒）"],["12/4 金","R","店内ツアー（入口→カウンター→焼き台）"],["12/6 日","F","メニュー紹介（アラカルト・ドリンク・価格帯）"],["毎日","S","空席、仕込み、来店者リポスト"]],
+c3:[["12/9 水","R","驚きメニュー（STAY PLAYFULを体現する1品）"],["12/11 金","F","忘年会・グループ利用案内"],["12/13 日","R","ドリンクとのペアリング"],["12/16 水","R","店主の仕込みルーティン"],["12/18 金","F","クリスマスの使い方提案"],["12/20 日","F","お客様の声まとめ"],["12/23 水","R","焼鳥ASMR（焼き音）"],["12/26 土","F","年末年始の営業日のお知らせ"],["12/30 水","R","1か月ありがとう／来年の予告"]]};
+const esc=s=>s.replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+for(const id in cal)document.getElementById(id).innerHTML=cal[id].map(([d,t,x])=>`<tr><td class="d">${esc(d)}</td><td>${t==="—"?"":`<span class="tag">${esc(t)}</span>`}${esc(x)}</td></tr>`).join('');
+for(const b of document.querySelectorAll('.copy button'))b.addEventListener('click',async()=>{try{await navigator.clipboard.writeText(b.nextElementSibling.textContent);b.textContent='コピーしました'}catch(e){b.textContent='長押しでコピー'}setTimeout(()=>b.textContent='コピー',2000)});
+}</script>
+</body></html>
