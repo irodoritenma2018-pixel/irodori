@@ -42,7 +42,7 @@
 
 ## フィード投稿（12月）の状況（11/27）
 - 画像24枚: assets/feed/posts/p01〜p24（git管理外）。順番とキャプション案: clients/birdie-house/07_feed_2026-12.md
-- キャプションはあたるさんが編集する: Googleドキュメント「BIRDIE HOUSE 投稿キャプション（12月）」 https://docs.google.com/document/d/1jP3w4uVNfJb3COszSdawa0RZMeYVBBJmI8jKi79vttU/edit （04_投稿用フォルダ）
+- キャプションはあたるさんが編集する: Googleドキュメント「BIRDIE HOUSE 投稿キャプション（12月）」 https://docs.google.com/document/d/17wal19DnLak6HbzsJXGUTckH6R6emOnVctvl4GKdisY/edit （04_投稿用フォルダ）
   - 予約前に必ずこのドキュメントを読み直して、その文面で予約する（絵文字はexportで確認すると正常。read_file_contentでは文字化けして見える）
 - ドリンクの写真が届いたら、料理の間に挟む（日付を組み直す）
 - まだ予約していない（あたるさんの最終OK待ち）
